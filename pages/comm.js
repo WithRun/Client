@@ -14,8 +14,12 @@ import axios from 'axios';
 import CrewPost from '../components/CrewPost';
 
 export default function Comm() {
-  const item = (typeof window !== 'undefined') ? localStorage.getItem('username'): ('')
+  const [item,setItem] = useState('')
+    useEffect(()=>{
 
+    (typeof window !== 'undefined') ?  setItem(localStorage.getItem('username')) : ' '
+    
+   })
 
     const contentStyle = {
         height: '160px',
