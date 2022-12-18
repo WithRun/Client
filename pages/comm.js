@@ -40,14 +40,7 @@ export default function Comm() {
              <h1 className={styles.title} style={{fontWeight: 'bold', marginTop: '30px', marginBottom: '50px'}} >
                             With <a style={{textDecoration:'none'}}>Run</a>
                 </h1>
-                <h4 style={{marginLeft: '20' , paddingLeft: '50', fontWeight: 'inherit'}} >
-                    반갑습니다, 
-                    <a style={{textDecoration:'none' , fontWeight: 'bolder'}}>
-                        {item}
-                        </a> 
-                    
-                    님!
-                </h4>
+               
                 <Menu style={{  marginBottom: 30}}theme='dark' mode='horizontal'>
           
           <Menu.Item  icon={<ThunderboltOutlined />}>
@@ -72,7 +65,14 @@ export default function Comm() {
                <Row gutter={8} >
             
             <Col xs={24} md={5}>
-            
+            <h4 style={{marginLeft: '20' , paddingLeft: '50', fontWeight: 'inherit'}} >
+                    반갑습니다, 
+                    <a style={{textDecoration:'none' , fontWeight: 'bolder'}}>
+                        {item}
+                        </a> 
+                    
+                    님!
+                </h4>
             </Col>
             <Col xs={24} md={14}>
             
