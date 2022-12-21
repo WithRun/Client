@@ -1,6 +1,6 @@
 import {Form,Button,Input} from 'antd';
 import React, { useCallback, useState } from 'react';
-import useInput from '../hooks/useInput';
+// import useInput from '../hooks/useInput';
 import PropTypes from 'prop-types';
 
 const CommentForm = ()=>
