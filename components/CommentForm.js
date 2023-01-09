@@ -5,17 +5,16 @@ import PropTypes from 'prop-types';
 
 const CommentForm = ()=>
 {
-    const [commentText, onChangeCommentText] = useInput('');
     const onSubmitForm  = useCallback(()=>
     {
-        console.log(commentText);
+        // console.log(commentText);
 
-    }, [commentText]);
+    }, []);
 
     return(
         <Form onFinish={onSubmitForm}>
             <Form.Item style={{ position:"relative" , margin: 0}}>
-                <Input.TextArea value={commentText} onChange={onChangeCommentText} rows={2}/>
+                <Input.TextArea value={''} onChange={''} rows={2}/>
                 <Button type='primary' htmlType='submit' style={{position: 'absolute', right: 0, bottom: -40}}>작성</Button>
             </Form.Item>
         </Form>
